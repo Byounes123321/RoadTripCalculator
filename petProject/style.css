@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    /* scale: 1.5; */
+    background-color: #BEB0A7;
+}
+
+header {
+    font-size: large;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #593837;
+    height: 100px;
+
+}
+
+
+.desc {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* border: 1px solid red; */
+}
+
+.main {
+    background-color: wheat;
+    scale: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 200px;
+}
+
+.units {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid red; */
+    /* margin: 50px; */
+}
+
+#change_units {
+    border-radius: 50px;
+}
+
+.changeunits {
+    margin: 10px;
+    border-radius: 36px;
+}
+
+.km {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* margin-bottom: auto; */
+    margin-top: -10px;
+}
+
+.ridersDistance {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    align-items: center;
+    /* margin: 50px;    */
+}
+
+#riders {
+    border-radius: 25px;
+    margin-right: 25px;
+    border: none;
+}
+
+.ridersDistance>p {
+    margin-top: -5px;
+}
+
+.typeFuel {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* margin: 50px; */
+}
+
+#distance {
+    border-radius: 25px;
+    border: none;
+}
+
+#type {
+    border-radius: 25px;
+    margin-right: 25px;
+    border: none;
+}
+
+#fuel {
+    border-radius: 25px;
+    border: none;
+
+}
+
+#fuel-cost>p {
+    display: inline;
+}
+
+.km {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* margin: 50px; */
+}
+
+#calculate {
+    /* border: 1px solid red; */
+    border-radius: 25px;
+}

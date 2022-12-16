@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./TravelCostCalculator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Road Trip Cost Calculator</h1>
+    </header>
+    <main class="main">
+        <div class="desc">
+            <h2>
+                Use this tool to calculate the cost of a road trip. Enter the number of riders, distance, type of
+                vehicle, and local fuel cost!
+            </h2>
+        </div>
+        <form action="#" method="post" id="travelCalculator" name="input_form">
+            <div class="units">
+                <label for="unit">Unit: </label>
+                <div>
+                    <input type="radio" name="input_unit" id="km" value="km" checked="checked">
+                    <label for="km">Metric (km, litres)</label>
+                </div>
+                <div>
+                    <input type="radio" name="input_unit" id="im" value="im">
+                    <label for="im">Imperial (miles, gallons)</label>
+                </div>
+                <div class="changeunits">
+                    <button type="button" id="change_units" name="change_units">Change units</button>
+                </div>
+
+                <div class="km">
+                    <div class="ridersDistance">
+                        <div>
+                            <label for="riders">Riders:</label>
+                            <input type="number" id="riders" name="riders" placeholder="2" required>
+                            <p id="riders_err"></p>
+                        </div>
+                        <div>
+                            <label for="distance">Distance: </label>
+                            <input type="number" id="distance" name="distance" placeholder="100" required>
+                            <p id="distance_err"></p>
+
+                        </div>
+                        <!-- <div class="km"> -->
+                        <p id="unit" name="unit">Km</p>
+                        <!-- </div> -->
+                    </div>
+
+                </div>
+                <div class="typeFuel">
+                    <div>
+                        <label for="type">Type of vehicle: </label>
+                        <select id="type" name="type" required>
+                            <option disabled selected value="Nan">-- Choose vehicle --</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="truck">Truck</option>
+                            <option value="van">Van</option>
+                            <option value="motorcycle">Motorcycle</option>
+                        </select>
+                        <p id="type_err"></p>
+                    </div>
+                    <div id="fuel-cost">
+                        <label for="fuel">Fuel Cost: </label>
+                        <input type="number" id="fuel" name="fuel" placeholder="1.5" required>
+                        <p id="fuel_err"></p>
+                        <p id="fUnit" name="fUnit">/Litre</p>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="calculate">Calculate</button>
+                </div>
+        </form>
+        <h2 id="output" name="output"></h2>
+    </main>
+</body>
+
+</html>
