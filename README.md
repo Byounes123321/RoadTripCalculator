@@ -1,0 +1,2 @@
+# Travel Cost Calculator
+This is a calculator made using javascript that will calculate the cost of a road trip depending on factors such as distance, fuel efficiency, fuel costs and number of passengers.
